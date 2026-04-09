@@ -59,7 +59,7 @@ Backend: Express.js
 
 ### [Bouquet builder]
 
-[Users can find how to build a personal bouquet basedon flowers they purchased and/ have grown. provides and interactive, fun and calming activity to do alone or with friends]
+[Users can find how to build a personal bouquet based on flowers they purchased and/ have grown. provides and interactive, fun and calming activity to do alone or with friends]
 
 [gif goes here]
 
