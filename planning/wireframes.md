@@ -5,14 +5,23 @@ Reference the Creating an Entity Relationship Diagram final project guide in the
 ## List of Pages
 
 [👉🏾👉🏾👉🏾 List the pages you expect to have in your app, with a ⭐ next to pages you have wireframed]
+[⭐]Home Page
+[]flower dictionary
+[⭐]Individual Flower Pages
+[]Individual Flower Gallery 
+[]Scan a Flower Page 
+[]Flower Search result page
+[]Grow guide page
+[]Build a Bouquet page
+[]About page
 
-## Wireframe 1: [page title]
+## Wireframe 1: [Home Page]
 
-[👉🏾👉🏾👉🏾 include wireframe 1]
+[![Home Page](Home.png)]
 
-## Wireframe 2: [page title]
+## Wireframe 2: [Individual Flower page]
 
-[👉🏾👉🏾👉🏾 include wireframe 2]
+[![Flower Page](FlowerPage.jpg)]
 
 ## Wireframe 3: [page title]
 
