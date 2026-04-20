@@ -6,6 +6,7 @@ import HomePage from './pages/homePage';
 import FlowerDictionary from './pages/flowerDictionary';
 import ScanAFlower from './pages/scanAFlower';
 import FlowerGallery from './pages/flowerGallery';
+import DiscoverPage from './pages/discoverPage';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 
@@ -22,6 +23,7 @@ const App = () => {
     let element = useRoutes([
         { path: '/', element: <HomePage /> },
         { path: '/about', element: <AboutPage /> },
+        { path: '/discover', element: <DiscoverPage /> },
         { path: '/dictionary', element: <FlowerDictionary /> },
         { path: '/scan', element: <ScanAFlower /> },
         { path: '/gallery', element: <FlowerGallery /> }
