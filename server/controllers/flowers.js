@@ -77,10 +77,4 @@ const deleteFlower = async (req, res) => {
   }
 };
 
-export default {
-  getFlowers,
-  getFlowerById,
-  createFlower,
-  updateFlower,
-  deleteFlower,
-};
+export { getFlowers, getFlowerById, createFlower, updateFlower, deleteFlower };
