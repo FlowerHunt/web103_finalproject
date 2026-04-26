@@ -18,6 +18,30 @@
     margin: 48px 0;
 }
 
+.discover-filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+    margin: 0 0 24px;
+}
+
+.discover-filters label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 0.85rem;
+    color: #2f3335;
+}
+
+.discover-filters select {
+    min-width: 150px;
+    border: 2px solid #111;
+    border-radius: 8px;
+    padding: 8px 10px;
+    font-family: inherit;
+}
+
 .flower-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));

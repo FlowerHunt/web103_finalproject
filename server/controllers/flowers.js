@@ -1,8 +1,23 @@
 import { pool } from "../config/database.js";
 import { flowerMeanings } from "../config/data.js";
+import { fetchDiscoverFlowers, fetchFlowerBySlug } from "../services/plantAPI.js";
 
 const getFlowers = async (req, res) => {
   try {
+    if (req.query.source === "trefle") {
+      const result = await fetchDiscoverFlowers({
+        page: req.query.page,
+        search: req.query.search,
+        color: req.query.color,
+        bloomMonth: req.query.bloomMonth,
+        growthHabit: req.query.growthHabit,
+        sortBy: req.query.sortBy,
+        sortDir: req.query.sortDir,
+      });
+      res.json(result);
+      return;
+    }
+
     const { meaning, family, search } = req.query;
     let query = "SELECT * FROM flowers WHERE true";
     const params = [];
@@ -29,12 +44,18 @@ const getFlowers = async (req, res) => {
 
 const getFlowerById = async (req, res) => {
   try {
+    const lookupId = req.params.id;
     const { rows } = await pool.query(
       "SELECT * FROM flowers WHERE id = $1",
-      [req.params.id]
+      [lookupId]
     );
-    if (!rows.length) return res.status(404).json({ error: "Flower not found" });
-    res.json(rows[0]);
+    if (rows.length) {
+      res.json(rows[0]);
+      return;
+    }
+
+    const trefleFlower = await fetchFlowerBySlug(lookupId);
+    res.json(trefleFlower);
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
