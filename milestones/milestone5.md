@@ -37,7 +37,7 @@ Complete the checklist below detailing each baseline, custom, and stretch featur
       - [x] the user can **delete** an existing item, such as a task
     - [x] Routes follow proper naming conventions
   - [ ] The web app includes the ability to reset the database to its default state
-- [ ] The project includes these frontend-specific features:
+- [X] The project includes these frontend-specific features:
   - [x] At least one redirection, where users are able to navigate to a new page with a new URL within the app
   - [x] At least one interaction that the user can initiate and complete on the same page without navigating to a new page
   - [x] Dynamic frontend routes created with React Router
