@@ -8,7 +8,7 @@ const AboutPage = () => {
       <div className="about-container">
         <img className="about-image" src={sunflowers} alt="Sunflowers" />
         <div className="about-text">
-            <h1>About FlowerHunt</h1>
+            <h1>Welcome to FlowerHunt</h1>
           <p>
             At FlowerHunt, we make it easy to dive into the beautiful world of
             flowers. From wanting to start your own garden to creating and
